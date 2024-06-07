@@ -61,8 +61,8 @@ variable "extra_env_vars" {
   default     = {}
 }
 
-variable "image" {
-  description = "Image"
+variable "service_image" {
+  description = "The service's image"
   type        = string
 }
 

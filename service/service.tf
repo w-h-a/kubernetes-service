@@ -40,7 +40,7 @@ resource "kubernetes_deployment" "network_deployment" {
         container {
           name              = var.service_name
           args              = split("-", var.service_name)
-          image             = "${var.image}:${var.service_version}"
+          image             = "${var.service_image}:${var.service_version}"
           image_pull_policy = var.image_pull_policy
 
           port {

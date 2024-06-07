@@ -19,7 +19,7 @@ variable "service_port" {
   default     = -1
 }
 
-variable "image" {
+variable "service_image" {
   description = "The service's base repo/image name"
   type        = string
 }
