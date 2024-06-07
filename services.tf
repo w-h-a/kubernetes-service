@@ -7,5 +7,5 @@ module "auth" {
   service_name      = var.service_name
   service_version   = var.service_version
   service_port      = var.service_port
-  image             = var.image
+  service_image     = var.service_image
 }
