@@ -69,7 +69,6 @@ variable "service_image" {
 variable "image_pull_policy" {
   description = "K8s image pull policy"
   type        = string
-  default     = "Always"
 }
 
 
