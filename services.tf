@@ -8,4 +8,5 @@ module "auth" {
   service_version   = var.service_version
   service_port      = var.service_port
   service_image     = var.service_image
+  image_pull_policy = var.image_pull_policy
 }

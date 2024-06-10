@@ -23,3 +23,8 @@ variable "service_image" {
   description = "The service's base repo/image name"
   type        = string
 }
+
+variable "image_pull_policy" {
+  description = "K8s image pull policy"
+  type        = string
+}
