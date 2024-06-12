@@ -10,10 +10,11 @@ locals {
   }
 
   common_env_vars = {
-    "NAMESPACE" = var.service_namespace
-    "NAME"      = var.service_name
-    "VERSION"   = var.service_version
-    "ADDRESS"   = ":${var.service_port}"
+    "NAMESPACE"           = var.service_namespace
+    "NAME"                = var.service_name
+    "VERSION"             = var.service_version
+    "ADDRESS"             = ":${var.service_port}"
+    "COCKROACHDB_ADDRESS" = "postgres://root@cockroachdb-public.${var.resource_namespace}:26257/?sslmode=disable"
   }
 }
 
