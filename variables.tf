@@ -18,6 +18,12 @@ variable "service_version" {
   type        = string
 }
 
+variable "service_type" {
+  description = "The type of service (e.g., cluster IP, load balancer, node port)"
+  type        = string
+  default     = "ClusterIP"
+}
+
 variable "service_port" {
   description = "The service's port"
   type        = number
