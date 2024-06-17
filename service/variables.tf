@@ -42,6 +42,12 @@ variable "service_port" {
   default     = -1
 }
 
+variable "node_port" {
+  description = "The node port"
+  type        = number
+  default     = -1
+}
+
 variable "service_protocol" {
   description = "The service's protocol"
   type        = string
