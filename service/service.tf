@@ -82,7 +82,7 @@ resource "kubernetes_service" "k8s_service" {
       port        = var.service_port
       protocol    = var.service_protocol
       target_port = "${var.service_name}-port"
-      node_port   = var.node_port != -1 ? var.node_port : null
+      node_port   = var.node_port != -1 ? var.node_port : -1
     }
 
     selector = merge(local.common_labels, var.extra_labels)
