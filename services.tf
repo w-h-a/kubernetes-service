@@ -10,6 +10,8 @@ module "auth" {
   service_port       = var.service_port
   service_image      = var.service_image
   image_pull_policy  = var.image_pull_policy
+  admin              = var.admin
+  secret             = var.secret
 }
 
 module "admin" {
