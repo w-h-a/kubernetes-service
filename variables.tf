@@ -3,6 +3,11 @@ variable "resource_namespace" {
   type        = string
 }
 
+variable "app_namespace" {
+  description = "The namespace of the app"
+  type        = string
+}
+
 variable "service_namespace" {
   description = "The service's namespace"
   type        = string
