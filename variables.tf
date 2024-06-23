@@ -45,3 +45,15 @@ variable "image_pull_policy" {
   description = "K8s image pull policy"
   type        = string
 }
+
+variable "admin" {
+  description = "admin id"
+  type        = string
+  default     = ""
+}
+
+variable "secret" {
+  description = "admin secret"
+  type        = string
+  default     = ""
+}

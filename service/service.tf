@@ -16,6 +16,8 @@ locals {
     "VERSION"             = var.service_version
     "ADDRESS"             = ":${var.service_port}"
     "COCKROACHDB_ADDRESS" = "postgres://root@cockroachdb-public.${var.resource_namespace}:26257/?sslmode=disable"
+    "ADMIN"               = var.admin
+    "SECRET"              = var.secret
   }
 }
 
