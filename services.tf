@@ -1,4 +1,3 @@
-// platform
 module "admin" {
   count = var.service_name == "admin" ? 1 : 0
 
@@ -93,7 +92,6 @@ module "store" {
   image_pull_policy  = var.image_pull_policy
 }
 
-// app 1
 module "webtix" {
   count = var.service_name == "webtix" ? 1 : 0
 
