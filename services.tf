@@ -62,21 +62,6 @@ module "cronjobs" {
   image_pull_policy  = var.image_pull_policy
 }
 
-module "runtime" {
-  count = var.service_name == "runtime" ? 1 : 0
-
-  source = "./service"
-
-  resource_namespace = var.resource_namespace
-  app_namespace      = var.app_namespace
-  service_namespace  = var.service_namespace
-  service_name       = var.service_name
-  service_version    = var.service_version
-  service_port       = var.service_port
-  service_image      = var.service_image
-  image_pull_policy  = var.image_pull_policy
-}
-
 module "store" {
   count = var.service_name == "store" ? 1 : 0
 
