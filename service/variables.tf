@@ -98,3 +98,9 @@ variable "secret" {
   type        = string
   default     = ""
 }
+
+variable "payment_key" {
+  description = "payment secret"
+  type        = string
+  default     = ""
+}

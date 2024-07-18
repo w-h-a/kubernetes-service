@@ -19,6 +19,7 @@ locals {
     "COCKROACHDB_ADDRESS" = "postgres://root@cockroachdb-public.${var.resource_namespace}:26257/?sslmode=disable"
     "ADMIN"               = var.admin
     "SECRET"              = var.secret
+    "PAYMENT_KEY"         = var.payment_key
   }
 }
 
