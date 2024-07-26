@@ -137,4 +137,5 @@ module "payments" {
   service_port       = var.service_port
   service_image      = var.service_image
   image_pull_policy  = var.image_pull_policy
+  payment_key        = var.payment_key
 }
