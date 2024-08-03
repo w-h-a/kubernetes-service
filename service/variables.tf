@@ -107,8 +107,8 @@ variable "payment_key" {
 
 variable "enable_tls" {
   description = "enable tls"
-  type        = bool
-  default     = false
+  type        = string
+  default     = "false"
 }
 
 variable "cert_provider" {
