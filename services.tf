@@ -13,6 +13,9 @@ module "admin" {
   node_port          = var.node_port
   service_image      = var.service_image
   image_pull_policy  = var.image_pull_policy
+  enable_tls         = var.enable_tls
+  cert_provider      = var.cert_provider
+  hosts              = var.hosts
 }
 
 module "auth" {
@@ -92,6 +95,9 @@ module "webtix" {
   node_port          = var.node_port
   service_image      = var.service_image
   image_pull_policy  = var.image_pull_policy
+  enable_tls         = var.enable_tls
+  cert_provider      = var.cert_provider
+  hosts              = var.hosts
 }
 
 module "tickets" {
