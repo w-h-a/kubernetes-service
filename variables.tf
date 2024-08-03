@@ -68,3 +68,21 @@ variable "payment_key" {
   type        = string
   default     = ""
 }
+
+variable "enable_tls" {
+  description = "enable tls"
+  type        = string
+  default     = "false"
+}
+
+variable "cert_provider" {
+  description = "cert provider"
+  type        = string
+  default     = ""
+}
+
+variable "hosts" {
+  description = "comma separated list of hosts"
+  type        = string
+  default     = ""
+}

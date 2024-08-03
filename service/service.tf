@@ -20,6 +20,9 @@ locals {
     "ADMIN"               = var.admin
     "SECRET"              = var.secret
     "PAYMENT_KEY"         = var.payment_key
+    "ENABLE_TLS"          = var.enable_tls
+    "CERT_PROVIDER"       = var.cert_provider
+    "HOSTS"               = var.hosts
   }
 }
 
