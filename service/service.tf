@@ -79,6 +79,11 @@ resource "kubernetes_service" "k8s_service" {
     namespace = var.service_namespace
     name      = var.service_name
     labels    = merge(local.common_labels, var.extra_labels)
+    # hardcoded for now
+    annotations = merge(
+      local.common_annotations,
+      var.k8s_service_type == "LoadBalancer" ? { "service.beta.kubernetes.io/do-loadbalancer-tls-passthrough" : "true" } : {}
+    )
   }
 
   spec {
