@@ -122,3 +122,15 @@ variable "hosts" {
   type        = string
   default     = ""
 }
+
+variable "aws_access_key" {
+  description = "aws access key"
+  type        = string
+  default     = ""
+}
+
+variable "aws_secret_access_key" {
+  description = "aws secret access key"
+  type        = string
+  default     = ""
+}
