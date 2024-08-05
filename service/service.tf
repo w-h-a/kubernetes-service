@@ -10,19 +10,21 @@ locals {
   }
 
   common_env_vars = {
-    "RESOURCE_NAMESPACE"  = var.resource_namespace
-    "APP_NAMESPACE"       = var.app_namespace
-    "NAMESPACE"           = var.service_namespace
-    "NAME"                = var.service_name
-    "VERSION"             = var.service_version
-    "ADDRESS"             = ":${var.service_port}"
-    "COCKROACHDB_ADDRESS" = "postgres://root@cockroachdb-public.${var.resource_namespace}:26257/?sslmode=disable"
-    "ADMIN"               = var.admin
-    "SECRET"              = var.secret
-    "PAYMENT_KEY"         = var.payment_key
-    "ENABLE_TLS"          = var.enable_tls
-    "CERT_PROVIDER"       = var.cert_provider
-    "HOSTS"               = var.hosts
+    "RESOURCE_NAMESPACE"    = var.resource_namespace
+    "APP_NAMESPACE"         = var.app_namespace
+    "NAMESPACE"             = var.service_namespace
+    "NAME"                  = var.service_name
+    "VERSION"               = var.service_version
+    "ADDRESS"               = ":${var.service_port}"
+    "COCKROACHDB_ADDRESS"   = "postgres://root@cockroachdb-public.${var.resource_namespace}:26257/?sslmode=disable"
+    "ADMIN"                 = var.admin
+    "SECRET"                = var.secret
+    "PAYMENT_KEY"           = var.payment_key
+    "ENABLE_TLS"            = var.enable_tls
+    "CERT_PROVIDER"         = var.cert_provider
+    "HOSTS"                 = var.hosts
+    "AWS_ACCESS_KEY_ID"     = var.aws_access_key
+    "AWS_SECRET_ACCESS_KEY" = var.aws_secret_access_key
   }
 }
 
