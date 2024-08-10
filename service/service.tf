@@ -85,7 +85,8 @@ resource "kubernetes_service" "k8s_service" {
     annotations = merge(
       local.common_annotations,
       var.k8s_service_type == "LoadBalancer" ? { "service.beta.kubernetes.io/do-loadbalancer-tls-passthrough" : "true" } : {},
-      var.service_name == "webtix" ? { "service.beta.kubernetes.io/do-loadbalancer-hostname" : "git-ur-tix.xyz" } : {}
+      var.service_name == "webtix" ? { "service.beta.kubernetes.io/do-loadbalancer-hostname" : "git-ur-tix.xyz" } : {},
+      var.service_name == "admin" ? { "service.beta.kubernetes.io/do-loadbalancer-hostname" : "wha-platform.xyz" } : {}
     )
   }
 
